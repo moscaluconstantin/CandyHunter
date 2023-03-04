@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);   //rb for GetComponent<Rigidbody2D>();
+            //rb.AddForce(Vector2.up * jumpForce);
         }
 
         UpdateAnimationUpdate();
